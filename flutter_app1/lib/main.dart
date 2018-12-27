@@ -17,14 +17,20 @@ class MyApp extends StatelessWidget {
           child: Container(
             child: new Text(
               'hello world',
-              style: TextStyle(
-                fontSize: 40.0
-              ),
+              style: TextStyle(fontSize: 40.0),
             ),
-            alignment: Alignment.bottomCenter,
+            alignment: Alignment.topLeft,
             width: 500.0,
             height: 400.0,
-            color: Colors.lightBlue,
+            // color: Colors.lightBlue,
+            padding: const EdgeInsets.fromLTRB(10.0, 30.0, 0.0, 0.0),
+            margin: const EdgeInsets.all(30.0),
+            decoration: new BoxDecoration(
+              gradient: const LinearGradient(
+                colors: [Colors.lightBlue, Colors.greenAccent, Colors.purple]
+              ),
+              border: Border.all(width: 2.0,color: Colors.red)
+            ), 
           ),
           // child: Text(
           //   'Hello World , aaaaaaaaaaaaa, bbbbbbbbbbbHello World , aaaaaaaaaaaaa, bbbbbbbbbbbHello World , aaaaaaaaaaaaa, bbbbbbbbbbbHello World , aaaaaaaaaaaaa, bbbbbbbbbbb',
