@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
               gradient: const LinearGradient(
                 colors: [Colors.lightBlue, Colors.greenAccent, Colors.purple]
               ),
-              border: Border.all(width: 2.0,color: Colors.red)
+              // border: Border.all(width: 2.0,color: Colors.red)
             ), 
           ),
           // child: Text(
